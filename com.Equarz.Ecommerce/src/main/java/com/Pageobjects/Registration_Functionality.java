@@ -15,6 +15,10 @@ public class Registration_Functionality extends Testbase{
 //	public String Phonenum="";
 //	public String Password1="";
 //	public String Confirmpassword="";
+	
+//	@FindBy (xpath="//a[@href='http://e-quarz.com/customer/auth/sign-up']")
+//	WebElement sinupbtn;
+//	
 	@FindBy(xpath = "//input[@name='f_name']")
 	WebElement firstname;
 	
@@ -48,6 +52,7 @@ public class Registration_Functionality extends Testbase{
 			String Phonenum,String Password1,String Confirmpassword) throws Throwable 
 	{
 		//System.out.println(first+last+emailid+Phonenum+Password1+Confirmpassword);
+		//signup.click();
 		firstname.sendKeys(first);
 		lastname.sendKeys(last);
 		email.sendKeys(emailid);

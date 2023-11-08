@@ -21,7 +21,7 @@ public class Addcarttest extends Testbase {
 	{
 		Setup();
 		lg=new Login_Functionality(driver);
-		lg.Verifylogin();
+		//lg.Verifylogin();
 		Add=new AddToCart(driver);
 		
 	}

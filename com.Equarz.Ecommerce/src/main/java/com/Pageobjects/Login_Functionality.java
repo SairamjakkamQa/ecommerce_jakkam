@@ -9,6 +9,10 @@ import com.base.Testbase;
 import com.hospiol.pageobjects.Homepage;
 
 public class Login_Functionality extends Testbase {
+	
+	
+	
+
 	@FindBy(id="si-email")
 	WebElement user;
 	
@@ -23,10 +27,10 @@ public class Login_Functionality extends Testbase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Homepage Verifylogin() throws Throwable 
+	public Homepage Verifylogin(String username,String password) throws Throwable 
 	{
-		user.sendKeys(props.getProperty("username"));
-		pass.sendKeys(props.getProperty("password"));
+		user.sendKeys(username);
+		pass.sendKeys(password);
 		Thread.sleep(15000);
 		signin.click();
 		
